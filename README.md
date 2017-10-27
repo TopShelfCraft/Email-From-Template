@@ -23,7 +23,7 @@ The **Email From Template** plugin provides a service method, also available via
    body: txtBody
 } %}
  
-{% do craft.emailFromTemplate.sendEmail(setemailSettingstings) %}
+{% do craft.emailFromTemplate.sendEmail(emailSettings) %}
 ```
 
 The `sendEmail` method is accessible via the `craft()->emailFromTemplate` service. It works _almost_ identically to the method of the same name found in Craft's [`EmailService`](https://craftcms.com/classreference/services/EmailService).
